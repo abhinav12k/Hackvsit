@@ -1,0 +1,52 @@
+.Features{
+    background: white;
+    color:#060c21; 
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Features ul li{
+    font-size: 30px;
+    text-align: center;
+    list-style-type: none;
+}
+.Features p{
+    color: #060c21;
+    text-align: center ;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.slideshow-container{
+    min-height: 600px;
+    background: #060c21;
+    perspective: 1000px;
+}
+.mySlides{
+    float: left;
+    width: 25%;
+    padding: 50px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.slideshow-container::after{
+    display: table-row;
+}
+.slideshow-container .mySlides:hover{
+    transform: rotateY(180deg);
+}
+.numbertext, .text{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.text {
+    background-color: #060c21;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+  

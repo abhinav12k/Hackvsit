@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box ;
+}
+body h1{
+    font-size: 30px;
+    color : #255784;
+    padding-right: 100px;
+    font-family: candara;
+    margin: 0;
+    padding: 160px 150px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#060c21;
+    font-family: candara;
+}
+.topbar{
+    width : 100% ;
+    padding: 20px ;
+    position: fixed ;
+    top:0px ;
+    transition:.5s ;
+    color:white;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar {
+    width :100%;
+    padding: 20px;
+    position: fixed ;
+    top: 0px ;
+    transition : .5s;
+    text-align: right;
+}
+.navbar ul li{
+    list-style-type:none ;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black ;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navbar ul li:hover{
+    background: #fffafa ;
+}
+a {
+    color: white;
+    text-decoration: unset;
+}
+.navbar ul li:hover a{
+    color: #060c21;
+}
+.FAQ{
+    background:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+}
+.FAQ p{
+    color: #060c21;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.FAQ h3{
+    color: #060c21;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.FAQ h4{
+    color: #060c21;
+    padding-left: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
