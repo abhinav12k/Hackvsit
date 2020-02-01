@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/report"
+    tools:context=".RegisterFirebase">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="298dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="Helping Growlers!!!"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="288dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/growlerType"
+        android:layout_width="291dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Type of Growler?"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <EditText
+        android:id="@+id/injury"
+        android:layout_width="291dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Type of Injury?"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/growlerType" />
+
+    <Button
+        android:id="@+id/btnReport"
+        android:layout_width="178dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FFFFFF"
+        android:elevation="5dp"
+        android:onClick="reportMethod"
+        android:padding="5dp"
+        android:shadowColor="@color/button"
+        android:text="Report!"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/injury" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

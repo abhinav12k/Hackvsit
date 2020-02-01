@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "212439505475",
+    "firebase_url": "https://growl-6e8f3.firebaseio.com",
+    "project_id": "growl-6e8f3",
+    "storage_bucket": "growl-6e8f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212439505475:android:6709808f4bbc0f15a452f6",
+        "android_client_info": {
+          "package_name": "com.example.growl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212439505475-9obgvttvvps609rtd8jrakehs6q3aahd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.growl",
+            "certificate_hash": "b782471345f6876aec183fa02fecf67bae238a6d"
+          }
+        },
+        {
+          "client_id": "212439505475-l8s5udpvgb4tduebmma328d8vt7pgdhd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWF540QUrC57lexN8cwVeKMtV5zEZN4AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212439505475-l8s5udpvgb4tduebmma328d8vt7pgdhd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

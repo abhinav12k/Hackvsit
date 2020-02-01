@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/report"
+    tools:context=".MyCompanion">
+
+    <TextView
+        android:id="@+id/yourProfile"
+        android:layout_width="205dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:text="Your Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="169dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourProfile"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="189dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="Sample Name"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toEndOf="@+id/profilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/yourProfile" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="196dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="dummy@gmail.com"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/phoneEt"
+        android:layout_width="171dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="9996464100"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toEndOf="@+id/profilePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/addPets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:background="#8BC34A"
+        android:onClick="addpetsMethod"
+        android:text="Add pets if any?"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

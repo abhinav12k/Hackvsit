@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpet"
+    tools:context=".RegisterFirebase">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="Pet Registration!"
+        android:textColor="#F44336"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="292dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Pet Type"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="291dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Pet Age"
+        android:inputType="numberSigned"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <EditText
+        android:id="@+id/vaccination"
+        android:layout_width="291dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Last Vaccination Date"
+        android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="178dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="120dp"
+        android:background="#8BC34A"
+        android:elevation="5dp"
+        android:onClick="petInfo"
+        android:padding="5dp"
+        android:shadowColor="#FFFFFF"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccination" />
+
+    <EditText
+        android:id="@+id/petName"
+        android:layout_width="292dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:hint="Pet Name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccination" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

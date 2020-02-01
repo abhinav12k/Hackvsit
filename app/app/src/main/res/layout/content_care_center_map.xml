@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ripple_bg"
+        app:rb_color="#0099CC"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pin"
+            android:translationY="-17dp" />
+
+    </com.skyfishjy.library.RippleBackground>
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        style="@style/MaterialSearchBarLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mt_roundedSearchBarEnabled="true"
+        android:layout_margin="10dp"
+        app:mt_hint="Search a place"
+        app:mt_maxSuggestionsCount="10"
+        app:mt_speechMode="false"
+        app:mt_navIconEnabled="true"
+        android:elevation="5dp"
+        android:outlineProvider="bounds"
+        app:mt_placeholder="Search a place"/>
+
+    <Button
+        android:id="@+id/findHospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Find nearby Hospitals"
+        android:textColor="@color/white"
+        android:background="@color/button"
+        android:padding="5dp"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        ></Button>
+
+</RelativeLayout>

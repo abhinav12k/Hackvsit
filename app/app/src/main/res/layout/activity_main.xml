@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/getHelpButton"
+        android:layout_width="171dp"
+        android:layout_height="132dp"
+        android:background="@drawable/circular_button"
+        android:onClick="getHelpMapMethod"
+        android:text="Get Help!"
+        android:textColor="#009602"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
+
+    <Button
+        android:id="@+id/careCenters"
+        android:layout_width="113dp"
+        android:layout_height="72dp"
+        android:background="@color/transparent"
+        android:onClick="careCenterMethod"
+        android:text="Care centers"
+        android:textColor="#8BC34A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/getHelpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <Button
+        android:id="@+id/MyCompanion"
+        android:layout_width="113dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/transparent"
+        android:onClick="myCompanionMethod"
+        android:text="My Companion"
+        android:textColor="#8BC34A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getHelpButton"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <Button
+        android:id="@+id/MyAccount"
+        android:layout_width="116dp"
+        android:layout_height="68dp"
+        android:background="@color/transparent"
+        android:onClick="myAccountMethod"
+        android:text="My Account"
+        android:textColor="#8BC34A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/MyCompanion"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getHelpButton"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <Button
+        android:id="@+id/newsFeed"
+        android:layout_width="113dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="64dp"
+        android:background="@color/transparent"
+        android:onClick="newFeedMethod"
+        android:text="Do's And Don'ts"
+        android:textColor="#8BC34A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/getHelpButton"
+        app:layout_constraintEnd_toStartOf="@+id/careCenters"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

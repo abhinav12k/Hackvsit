@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Growl!</string>
+    <string name="title_activity_help_me_map">Map</string>
+    <string name="title_activity_care_center_map">careCenterMapActivity</string>
+
+    <string name="title_activity_starting_page">StartingPage</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
