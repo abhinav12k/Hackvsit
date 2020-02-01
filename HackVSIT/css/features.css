@@ -48,5 +48,26 @@
     text-align: center;
     transform: rotateY(180deg);
 }
-
-  
+.use p{
+    background: white;
+    color:#060c21;
+    font-family: candara;
+    font-size: 24px;
+}
+.use h1{
+    color:#060c21;
+    font-family: candara;
+    text-align: center;
+    font-size: 50px;
+}
+.use {
+    min-height: 50vh;
+    padding: 100px 120px;
+}
+footer{
+    background: #060c21;
+    color:white;
+    font-family: candara;
+    font-size: 20px;
+    padding : 100px 120px;
+}

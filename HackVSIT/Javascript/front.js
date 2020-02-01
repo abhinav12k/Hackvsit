@@ -2,6 +2,9 @@ var nav = document.getElementById('tpp');
 var hd = document.getElementById('headd');
 var navbar = document.getElementById('nb');
 var text = document.getElementById('text');
+var x ;
+var y;
+
 window.onscroll = function(){
     if (window.pageYOffset > 250){
         nav.style.background = "#060c21";
